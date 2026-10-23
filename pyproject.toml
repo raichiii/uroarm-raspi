@@ -1,0 +1,18 @@
+[project]
+name = "uroa-arm-raspi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "adafruit-circuitpython-motor>=3.5.0",
+    "adafruit-circuitpython-pca9685>=3.4.22",
+    "ultralytics",
+]
+
+[project.scripts]
+uroa-arm-raspi = "uroa_arm_raspi:main"
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"
